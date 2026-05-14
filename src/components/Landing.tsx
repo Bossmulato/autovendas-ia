@@ -429,7 +429,7 @@ function Footer() {
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li><a href={WHATSAPP_LINK} className="hover:text-primary inline-flex items-center gap-2"><MessageCircle className="size-4" /> WhatsApp</a></li>
             <li><a href="#" className="hover:text-primary inline-flex items-center gap-2"><Instagram className="size-4" /> Instagram</a></li>
-            <li><a href="mailto:contacto@autovendas.ai" className="hover:text-primary inline-flex items-center gap-2"><Mail className="size-4" /> contacto@autovendas.ai</a></li>
+            <li><a href="mailto:contacto@autovendas.ai" className="hover:text-primary inline-flex items-center gap-2"><Mail className="size-4" /><span>contacto@autovendas.ai</span></a></li>
           </ul>
         </div>
         <div>
