@@ -321,7 +321,7 @@ function Pricing() {
                 ))}
               </ul>
               <a
-                href={WHATSAPP_LINK}
+                href={p.link}
                 target="_blank"
                 rel="noreferrer"
                 className={`mt-8 block text-center font-semibold py-3 rounded-xl transition ${
