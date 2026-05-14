@@ -296,6 +296,9 @@ function Pricing() {
     <section id="planos" className="py-24 px-6">
       <div className="container mx-auto">
         <SectionHeader eyebrow="Planos" title={<>Comece <span className="text-gradient">hoje mesmo</span></>} />
+        <p className="text-center text-muted-foreground mt-4 max-w-xl mx-auto">
+          Funciona em qualquer país · Pagamentos em várias moedas (Kz, €, $, R$)
+        </p>
         <div className="grid md:grid-cols-2 gap-6 mt-14 max-w-4xl mx-auto">
           {plans.map((p) => (
             <div
@@ -310,8 +313,9 @@ function Pricing() {
                 </div>
               )}
               <h3 className="font-display text-2xl font-bold">{p.name}</h3>
-              <div className="mt-4 flex items-baseline gap-1">
-                <span className="text-5xl font-bold">€{p.price}</span>
+              <div className="mt-4 flex items-baseline gap-2 flex-wrap">
+                <span className="text-4xl md:text-5xl font-bold">{p.price} Kz</span>
+                <span className={`text-lg line-through ${p.featured ? "text-primary-foreground/60" : "text-muted-foreground/70"}`}>{p.oldPrice} Kz</span>
                 <span className={p.featured ? "text-primary-foreground/80" : "text-muted-foreground"}>/mês</span>
               </div>
               <ul className="mt-6 space-y-3">
