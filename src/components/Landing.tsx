@@ -277,14 +277,16 @@ function Pricing() {
   const plans = [
     {
       name: "Básico",
-      price: "19",
+      price: "10.000",
+      oldPrice: "20.000",
       features: ["Respostas automáticas", "1 produto", "Suporte básico", "Integração WhatsApp"],
       featured: false,
       link: "https://pay.kambafy.com/checkout/14042a90-5427-4e06-b03a-f82ffedc1947",
     },
     {
       name: "Pro",
-      price: "49",
+      price: "20.000",
+      oldPrice: "40.000",
       features: ["IA avançada", "Múltiplos produtos", "Integração de pagamento", "Automações avançadas", "Suporte prioritário"],
       featured: true,
       link: WHATSAPP_LINK,
