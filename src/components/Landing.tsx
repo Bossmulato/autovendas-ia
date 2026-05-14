@@ -280,12 +280,14 @@ function Pricing() {
       price: "19",
       features: ["Respostas automáticas", "1 produto", "Suporte básico", "Integração WhatsApp"],
       featured: false,
+      link: "https://pay.kambafy.com/checkout/14042a90-5427-4e06-b03a-f82ffedc1947",
     },
     {
       name: "Pro",
       price: "49",
       features: ["IA avançada", "Múltiplos produtos", "Integração de pagamento", "Automações avançadas", "Suporte prioritário"],
       featured: true,
+      link: WHATSAPP_LINK,
     },
   ];
   return (
