@@ -274,72 +274,66 @@ function BotDemo() {
 }
 
 function Pricing() {
-  const plans = [
-    {
-      name: "Básico",
-      price: "10.000",
-      oldPrice: "20.000",
-      features: ["Sistema AutoVendas AI incluído", "E-book de utilização", "Vídeos tutoriais", "Suporte 24/7", "Integração WhatsApp"],
-      featured: false,
-      link: "https://pay.kambafy.com/checkout/14042a90-5427-4e06-b03a-f82ffedc1947",
-    },
-    {
-      name: "Pro",
-      price: "20.000",
-      oldPrice: "40.000",
-      features: ["Sistema AutoVendas AI incluído", "E-book de utilização", "Vídeos tutoriais", "Suporte 24/7", "IA avançada", "Múltiplos produtos", "Integração de pagamento", "Automações avançadas"],
-      featured: true,
-      link: WHATSAPP_LINK,
-    },
-  ];
+  const plan = {
+    name: "AutoVendas AI",
+    price: "10.000",
+    oldPrice: "20.000",
+    features: [
+      "Sistema AutoVendas AI incluído",
+      "E-book de utilização",
+      "Vídeos tutoriais",
+      "Suporte 24/7",
+      "Integração WhatsApp",
+      "IA avançada e automações",
+      "Múltiplos produtos",
+      "Integração de pagamento",
+    ],
+    link: "https://pay.kambafy.com/checkout/14042a90-5427-4e06-b03a-f82ffedc1947",
+  };
   return (
     <section id="planos" className="py-24 px-6">
       <div className="container mx-auto">
-        <SectionHeader eyebrow="Planos" title={<>Comece <span className="text-gradient">hoje mesmo</span></>} />
+        <SectionHeader eyebrow="Plano único" title={<>Comece <span className="text-gradient">hoje mesmo</span></>} />
         <p className="text-center text-muted-foreground mt-4 max-w-xl mx-auto">
-          Funciona em qualquer país · Pagamentos em várias moedas (Kz, €, $, R$)
+          Usado em todo o mundo para aumentar vendas · Pagamentos em várias moedas (Kz, €, $, R$)
         </p>
-        <div className="grid md:grid-cols-2 gap-6 mt-14 max-w-4xl mx-auto">
-          {plans.map((p) => (
-            <div
-              key={p.name}
-              className={`relative rounded-3xl p-8 transition hover:-translate-y-1 ${
-                p.featured ? "bg-gradient-primary text-primary-foreground glow animate-pulse-glow" : "glass"
-              }`}
-            >
-              {p.featured && (
-                <div className="absolute -top-3 right-6 bg-background text-primary text-xs font-bold px-3 py-1 rounded-full border border-primary">
-                  MAIS POPULAR
-                </div>
-              )}
-              <h3 className="font-display text-2xl font-bold">{p.name}</h3>
-              <div className="mt-4 flex items-baseline gap-2 flex-wrap">
-                <span className="text-4xl md:text-5xl font-bold">{p.price} Kz</span>
-                <span className={`text-lg line-through ${p.featured ? "text-primary-foreground/60" : "text-muted-foreground/70"}`}>{p.oldPrice} Kz</span>
-                <span className={p.featured ? "text-primary-foreground/80" : "text-muted-foreground"}>/mês</span>
-              </div>
-              <ul className="mt-6 space-y-3">
-                {p.features.map((f) => (
-                  <li key={f} className="flex items-center gap-3 text-sm">
-                    <Check className={`size-4 ${p.featured ? "text-primary-foreground" : "text-primary"}`} />
-                    {f}
-                  </li>
-                ))}
-              </ul>
-              <a
-                href={p.link}
-                target="_blank"
-                rel="noreferrer"
-                className={`mt-8 block text-center font-semibold py-3 rounded-xl transition ${
-                  p.featured
-                    ? "bg-background text-foreground hover:bg-background/90"
-                    : "bg-gradient-primary text-primary-foreground hover:opacity-90"
-                }`}
-              >
-                Começar Agora
-              </a>
+        <div className="mt-8 flex justify-center">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-primary/40 text-sm">
+            <span className="size-2 rounded-full bg-primary animate-pulse" />
+            <span className="font-semibold text-primary">Poucas vagas disponíveis</span>
+          </div>
+        </div>
+        <div className="mt-10 max-w-md mx-auto">
+          <div className="relative rounded-3xl p-8 bg-gradient-primary text-primary-foreground glow animate-pulse-glow transition hover:-translate-y-1">
+            <div className="absolute -top-3 right-6 bg-background text-primary text-xs font-bold px-3 py-1 rounded-full border border-primary">
+              OFERTA LIMITADA
             </div>
-          ))}
+            <h3 className="font-display text-2xl font-bold">{plan.name}</h3>
+            <div className="mt-4 flex items-baseline gap-2 flex-wrap">
+              <span className="text-4xl md:text-5xl font-bold">{plan.price} Kz</span>
+              <span className="text-lg line-through text-primary-foreground/60">{plan.oldPrice} Kz</span>
+              <span className="text-primary-foreground/80">único</span>
+            </div>
+            <ul className="mt-6 space-y-3">
+              {plan.features.map((f) => (
+                <li key={f} className="flex items-center gap-3 text-sm">
+                  <Check className="size-4 text-primary-foreground" />
+                  {f}
+                </li>
+              ))}
+            </ul>
+            <a
+              href={plan.link}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-8 block text-center font-semibold py-3 rounded-xl transition bg-background text-foreground hover:bg-background/90"
+            >
+              Garantir minha vaga
+            </a>
+            <p className="text-center text-xs text-primary-foreground/80 mt-3">
+              Sistema usado mundialmente para escalar vendas no WhatsApp
+            </p>
+          </div>
         </div>
       </div>
     </section>
