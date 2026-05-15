@@ -5,7 +5,7 @@ import {
   Plus, Minus, ShieldCheck, Star,
 } from "lucide-react";
 
-const WHATSAPP_LINK = "https://wa.me/244900000000";
+const WHATSAPP_LINK = "https://wa.me/244954033056";
 
 export default function Landing() {
   return (
