@@ -252,20 +252,19 @@ function BotDemo() {
           </ul>
         </div>
 
-        <div className="glass rounded-3xl p-5 glow-soft max-w-md mx-auto w-full">
-          <div className="flex items-center gap-3 pb-3 border-b border-border">
-            <div className="size-10 rounded-full bg-gradient-primary grid place-items-center">
-              <Bot className="size-5 text-primary-foreground" />
-            </div>
-            <div>
-              <div className="text-sm font-semibold">AutoVendas Bot</div>
-              <div className="text-xs text-primary">a escrever…</div>
-            </div>
-          </div>
-          <div className="space-y-2.5 py-5">
-            {convo.map((m, i) => (
-              <Bubble key={i} side={m.side as "left" | "right"} delay={`${i * 0.25}s`}>{m.text}</Bubble>
-            ))}
+        <div className="relative glass rounded-3xl p-3 glow-soft max-w-md mx-auto w-full">
+          <div className="absolute -inset-6 [background:var(--gradient-glow)] blur-3xl opacity-50 -z-10" />
+          <video
+            src="/demo.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            controls
+            className="w-full rounded-2xl"
+          />
+          <div className="text-center text-xs text-muted-foreground mt-3">
+            Veja o sistema funcionando em tempo real
           </div>
         </div>
       </div>
