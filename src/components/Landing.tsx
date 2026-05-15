@@ -228,11 +228,11 @@ function HowItWorks() {
 function BotDemo() {
   const convo = [
     { side: "right", text: "Quanto custa?" },
-    { side: "left", text: "Temos planos Básico e Pro. Qual desejas conhecer? 😊" },
+    { side: "left", text: "Plano único AutoVendas AI por 10.000 Kz 🚀" },
     { side: "right", text: "Como funciona?" },
-    { side: "left", text: "O sistema responde clientes automaticamente e ajuda no processo de vendas." },
-    { side: "right", text: "Quero testar!" },
-    { side: "left", text: "✅ Perfeito! Aqui está o seu acesso de teste grátis: autovendas.ai/teste" },
+    { side: "left", text: "O sistema responde clientes automaticamente e ajuda a fechar vendas." },
+    { side: "right", text: "Quero garantir!" },
+    { side: "left", text: "✅ Perfeito! Aqui está o link de pagamento seguro." },
   ];
   return (
     <section className="py-24 px-6 relative">
