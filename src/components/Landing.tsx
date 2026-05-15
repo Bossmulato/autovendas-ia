@@ -106,10 +106,10 @@ function HeroMockup() {
           </div>
           <div className="space-y-2.5 py-4 text-sm">
             <Bubble side="left" delay="0s">Olá! 👋 Bem-vindo à nossa loja.</Bubble>
-            <Bubble side="right" delay="0.3s">Quanto custa o plano Pro?</Bubble>
-            <Bubble side="left" delay="0.6s">O Pro custa 49€/mês com IA avançada e pagamentos. Quer testar grátis?</Bubble>
-            <Bubble side="right" delay="0.9s">Sim, pode enviar o link!</Bubble>
-            <Bubble side="left" delay="1.2s">✅ Aqui está: pagar.autovendas.ai/pro</Bubble>
+            <Bubble side="right" delay="0.3s">Quanto custa o AutoVendas AI?</Bubble>
+            <Bubble side="left" delay="0.6s">Apenas 10.000 Kz (único) com IA, automações e pagamentos. Quer garantir a sua vaga?</Bubble>
+            <Bubble side="right" delay="0.9s">Sim, envia o link!</Bubble>
+            <Bubble side="left" delay="1.2s">✅ Aqui está o seu acesso imediato 🚀</Bubble>
           </div>
         </div>
 
