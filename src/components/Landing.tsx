@@ -32,7 +32,7 @@ function Nav() {
           <span className="size-8 rounded-lg bg-gradient-primary grid place-items-center glow">
             <Bot className="size-5 text-primary-foreground" />
           </span>
-          AutoVendas <span className="text-gradient">AI</span>
+          AutoVendas <span className="text-gradient">IA</span>
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           <a href="#beneficios" className="hover:text-foreground transition">Benefícios</a>
@@ -106,7 +106,7 @@ function HeroMockup() {
           </div>
           <div className="space-y-2.5 py-4 text-sm">
             <Bubble side="left" delay="0s">Olá! 👋 Bem-vindo à nossa loja.</Bubble>
-            <Bubble side="right" delay="0.3s">Quanto custa o AutoVendas AI?</Bubble>
+            <Bubble side="right" delay="0.3s">Quanto custa o AutoVendas IA?</Bubble>
             <Bubble side="left" delay="0.6s">Apenas 10.000 Kz (único) com IA, automações e pagamentos. Quer garantir a sua vaga?</Bubble>
             <Bubble side="right" delay="0.9s">Sim, envia o link!</Bubble>
             <Bubble side="left" delay="1.2s">✅ Aqui está o seu acesso imediato 🚀</Bubble>
@@ -228,7 +228,7 @@ function HowItWorks() {
 function BotDemo() {
   const convo = [
     { side: "right", text: "Quanto custa?" },
-    { side: "left", text: "Plano único AutoVendas AI por 10.000 Kz 🚀" },
+    { side: "left", text: "Plano único AutoVendas IA por 10.000 Kz 🚀" },
     { side: "right", text: "Como funciona?" },
     { side: "left", text: "O sistema responde clientes automaticamente e ajuda a fechar vendas." },
     { side: "right", text: "Quero garantir!" },
@@ -274,11 +274,11 @@ function BotDemo() {
 
 function Pricing() {
   const plan = {
-    name: "AutoVendas AI",
+    name: "AutoVendas IA",
     price: "10.000",
     oldPrice: "20.000",
     features: [
-      "Sistema AutoVendas AI incluído",
+      "Sistema AutoVendas IA incluído",
       "E-book de utilização",
       "Vídeos tutoriais",
       "Suporte 24/7",
@@ -417,7 +417,7 @@ function Footer() {
             <span className="size-8 rounded-lg bg-gradient-primary grid place-items-center">
               <Bot className="size-5 text-primary-foreground" />
             </span>
-            AutoVendas <span className="text-gradient">AI</span>
+            AutoVendas <span className="text-gradient">IA</span>
           </div>
           <p className="text-sm text-muted-foreground max-w-xs">
             Automatize as vendas no WhatsApp com inteligência artificial.
@@ -441,7 +441,7 @@ function Footer() {
         </div>
       </div>
       <div className="border-t border-border py-5 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} AutoVendas AI · Todos os direitos reservados
+        © {new Date().getFullYear()} AutoVendas IA · Todos os direitos reservados
       </div>
     </footer>
   );
