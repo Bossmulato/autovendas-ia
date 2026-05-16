@@ -5,9 +5,9 @@ export const Route = createFileRoute("/")({
   component: Landing,
   head: () => ({
     meta: [
-      { title: "AutoVendas AI · Vendas automáticas no WhatsApp com IA" },
+      { title: "AutoVendas IA · Vendas automáticas no WhatsApp com IA" },
       { name: "description", content: "Sistema com IA que responde clientes, apresenta produtos e fecha vendas no WhatsApp 24h por dia." },
-      { property: "og:title", content: "AutoVendas AI · Vendas automáticas no WhatsApp" },
+      { property: "og:title", content: "AutoVendas IA · Vendas automáticas no WhatsApp" },
       { property: "og:description", content: "IA que vende por si no WhatsApp, 24/7." },
     ],
     links: [
